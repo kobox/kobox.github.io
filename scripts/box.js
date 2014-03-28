@@ -78,8 +78,9 @@ var PortfolioBox = (function(){
                     return false;
 
                 } );
+                if (ga) {
                 ga('send', 'event', $(this).data('panel'), 'clicked');
-
+                }
                 return false;
             });
         });
@@ -87,8 +88,11 @@ var PortfolioBox = (function(){
     $('#bars').click(function(){
 
         if (slide){
-        $(this).addClass('slide');
-        $('.about').addClass('slide');
+            $(this).addClass('slide');
+            $('.about').addClass('slide');
+            if (ga) {
+                ga('send', 'event', 'about', 'clicked');
+            }
         } else {
             $('.about').removeClass('slide');
             $(this).removeClass('slide');
