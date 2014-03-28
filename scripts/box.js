@@ -78,6 +78,8 @@ var PortfolioBox = (function(){
                     return false;
 
                 } );
+                ga('send', 'event', $(this).data('panel'), 'clicked');
+
                 return false;
             });
         });
