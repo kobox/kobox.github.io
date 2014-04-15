@@ -15,12 +15,14 @@
 #bars {
   background-color: #333333;
   color: #fad72c;
+  width: 60px;
+  height: 60px;
   border: none;
   left: 2.5em;
   top: 1.875em;
   position: absolute;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 50px;
   z-index: 999; }
 
 .tooltip {
